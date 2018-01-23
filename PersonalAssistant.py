@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 20 13:19:24 2018
 
-@author: Manav
+@author: Manvenddra
 """
 
 #!/usr/bin/env python3
@@ -47,7 +47,7 @@ def recordAudio():
  
     return data
  
-def jarvis(data):
+def maddy(data):
     if "forget you" in data:
         speak("aww.. so kind of you. Thank you")
     if "close" in data or "bye" in data:
@@ -76,11 +76,11 @@ speak("Hi "+name+", thats very good name. So do you know my name ? Please call m
 while 1:
     
     data = recordAudio()
-    if "sandy" in data or "Sandy" in data:
+    if "maddy" in data or "Maddy" in data:
         speak("Yeah... You remembered me ...")
         while 1:
             data = recordAudio()
-            jarvis(data)
+            maddy(data)
     else:
         speak("You forgot me.. This is not done. Please call my name. ")
 
